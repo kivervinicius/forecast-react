@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html,
+body {
+  min-height: 100%;
+
+  & > * {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  background: linear-gradient(to bottom, #5fcbef 0%, #17577b 100%);
+  font-family: 'Lato', sans-serif;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+
+  .title {
+    color: #fff;
+    border: solid #fff;
+    padding: 10px 0;
+    border-width: 2px 0px;
+  }
+}

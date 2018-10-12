@@ -1,0 +1,11 @@
+.forecast {
+  display: flex;
+  width: 100%;
+
+  .forecast-items {
+    background: #fff;
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+  }
+}

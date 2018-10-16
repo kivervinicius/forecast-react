@@ -1,11 +1,40 @@
 .forecast {
   display: flex;
   width: 100%;
+  margin-top: 12px;
 
   .forecast-items {
-    background: #fff;
-    flex: 1;
+    color: #7d7d7d;
+    background: linear-gradient(to bottom, #fff 0%,#eee 100%);
+    flex: 1 1;
     margin: 10px;
     padding: 10px;
+    border-radius: 5px;
+    height: 300px;
+    box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14),
+                0 9px 46px 8px rgba(0,0,0,0.12),
+                0 11px 15px -7px rgba(0,0,0,0.2);
+    text-align: center;
+
+    h1 {
+      margin: 0;
+    }
+    h2 {
+      font-size: 16px;
+      margin: 0;
+      text-align: center;
+      text-transform: uppercase;
+      border: solid #b9b9b9;
+      border-width: 1px 0;
+      padding: 6px;
+    }
+
+    span {
+      font-size: 20px;
+    }
+
+    img {
+      margin: 20px auto 0 0;
+    }
   }
 }

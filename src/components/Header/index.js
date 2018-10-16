@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import "./Header.scss";
 
 class Header extends Component {
@@ -50,12 +51,27 @@ class Header extends Component {
   render() {
     return (
       <div className="header">
-        <input type="text" placeholder="Informe a cidade" />
-        <select>{this.buildOptions()}</select>
-        <button>Buscar</button>
+        <input
+          type="text"
+          placeholder="Informe a cidade"
+          onChange={this.props.onChangeCity}
+        />
+        <select
+          onChange={this.props.onChangeState}
+        >
+          <option value="-1">Estado</option>
+          {this.buildOptions()}
+        </select>
+        <button onClick={this.props.onClickSearch}>Buscar</button>
       </div>
     );
   }
 }
+
+Header.propTypes = {
+  onChangeCity: PropTypes.func,
+  onChangeState: PropTypes.func,
+  onClickSearch: PropTypes.func,
+};
 
 export default Header;

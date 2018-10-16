@@ -32,7 +32,6 @@ class Api {
         "token": this.token,
       }
     });
-    // forecast/locale/3477/hours/72?token=your-app-token
   }
 
   async getForecast (cityId) {

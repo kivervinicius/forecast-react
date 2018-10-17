@@ -5,7 +5,7 @@ import "moment/locale/pt-br";
 class Api {
   constructor() {
     this.token = "cb63b15d787de5ac937e94206143fcdb";
-    this.defaultUrl = "http://apiadvisor.climatempo.com.br/api/v1/";
+    this.defaultUrl = "https://apiadvisor.climatempo.com.br/api/v1/";
   }
 
   searchCity(city, state) {
